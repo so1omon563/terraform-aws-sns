@@ -10,6 +10,17 @@ Example shows using Default Tags in the provider as well as passing additional t
 ## Examples
 
 ```hcl
+terraform {
+  required_version = ">= 1.0"
+
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = ">= 4.0"
+    }
+  }
+}
+
 provider "aws" {
   default_tags {
     tags = {
@@ -34,7 +45,10 @@ output "sns_topic" { value = module.sns_topic }
 
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.0 |
 
 ## Providers
 

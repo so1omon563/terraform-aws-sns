@@ -7,6 +7,10 @@ Basic quickstart for creating a SNS Topic Policy resource.
 ## Examples
 
 ```hcl
+terraform {
+  required_version = ">= 1.0"
+}
+
 module "sns_topic_policy" {
   source  = "so1omon563/sns/aws//modules/sns_topic_policy"
   version = "2.0.0" # Replace with appropriate version
@@ -17,7 +21,9 @@ module "sns_topic_policy" {
 
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
 
 ## Providers
 
