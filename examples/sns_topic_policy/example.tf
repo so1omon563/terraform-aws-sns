@@ -1,3 +1,7 @@
+terraform {
+  required_version = ">= 1.0"
+}
+
 module "sns_topic_policy" {
   source  = "so1omon563/sns/aws//modules/sns_topic_policy"
   version = "2.0.0" # Replace with appropriate version
